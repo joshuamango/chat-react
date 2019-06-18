@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import './styles.css';
+import GitHubLogo from './images/GitHub-Mark-Light-32px.png';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        <div id="hero">
+          <div id="navbar">
+            <nav>
+              <a href="https://www.github.com/joshuamango"><img id="github-icon" src={GitHubLogo} alt="GitHub logo"/></a>
+            </nav>
+          </div>
+          <div className="heading">
+            <h1>Chat</h1>
+            <h3>A new way to connect</h3>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById("root")
+);
