@@ -11,7 +11,7 @@ class App extends React.Component {
         <div id="hero">
           <div id="navbar">
             <nav>
-              <a href="https://www.github.com/joshuamango"><img id="github-icon" src={GitHubLogo} alt="GitHub logo"/></a>
+              <a href="https://github.com/joshuamango/chat-react"><img id="github-icon" src={GitHubLogo} alt="GitHub logo"/></a>
             </nav>
           </div>
           <div className="heading">
